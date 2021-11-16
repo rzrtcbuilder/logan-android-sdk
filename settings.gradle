@@ -1,0 +1,3 @@
+rootProject.name = "rz-android-logan"
+include ':app'
+include ':Logan-Library'
