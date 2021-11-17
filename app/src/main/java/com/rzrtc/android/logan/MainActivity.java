@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
             RzLogan loganInstance = RzLoganFactory.createRzLoganInstance(this, new RzLoganConfig.Builder()
                     .setDeleteAfterUpload(true)
                     .setFileDir(getExternalFilesDir("logan-dir").getAbsolutePath())
@@ -36,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-        } catch (LoganException e) {
-            e.printStackTrace();
-        }
 
     }
 }
